@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome 2026</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: radial-gradient(circle at top, #1b4332, #081c15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            color: #fefae0;
+            overflow: hidden;
+        }
+
+        /* Stars */
+        body::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: 
+                radial-gradient(2px 2px at 20% 30%, #fff, transparent),
+                radial-gradient(2px 2px at 80% 40%, #fff, transparent),
+                radial-gradient(1px 1px at 50% 70%, #fff, transparent),
+                radial-gradient(1px 1px at 70% 20%, #fff, transparent);
+            opacity: 0.6;
+        }
+
+        .card {
+            position: relative;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 50px 70px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+            animation: fadeUp 2s ease;
+            backdrop-filter: blur(6px);
+        }
+
+        .moon {
+            font-size: 60px;
+            margin-bottom: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        h1 {
+            font-size: 44px;
+            margin: 10px 0;
+            color: #ffd166;
+        }
+
+        .year {
+            font-size: 90px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #ffd166;
+            text-shadow: 0 0 20px rgba(255, 209, 102, 0.8);
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.8;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .dua {
+            margin-top: 25px;
+            font-size: 18px;
+            font-style: italic;
+            color: #e9edc9;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 16px;
+            opacity: 0.85;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="moon">🌙</div>
+
+        <h1>Farewell 2025</h1>
+        <p>
+            A year full of lessons, patience, and growth.  
+            We thank Allah for every moment.
+        </p>
+
+        <div class="year">2026 ✨</div>
+
+        <p>
+            Welcome to a new beginning filled with hope, faith,  
+            and beautiful opportunities.
+        </p>
+
+        <div class="dua">
+            “O Allah, make this year a year of goodness, peace, and success.”
+        </div>
+
+        <footer>
+            Happy New Year • May Allah bless you 🤍
+        </footer>
+    </div>
+
+</body>
+</html>
